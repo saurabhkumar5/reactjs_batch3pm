@@ -2,13 +2,13 @@
 import React from 'react';
 import './Image.css';
 
-function Image(props) {
- 
+function Image({img,name}) {
+
   return (
     <div className='container'>
       <div className='box'>
-        <img src={props.momo}/>
-        <h1>{props.name}</h1>
+        <img src={img}/>
+        <h1>{name}</h1>
         <p>Adress:belongi</p>
         <h2>Hobbey:making reels</h2>
     </div>
