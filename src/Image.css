@@ -5,3 +5,14 @@
     margin: 10px;
     border-radius: 10px;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+img{
+    width: 300px;
+    height: 300px;
+  }
+  

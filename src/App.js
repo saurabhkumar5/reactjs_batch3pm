@@ -1,26 +1,27 @@
 import "./App.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Image from "./Image";
-import {Data}  from "./Data";
+import Header from './Header/Header.js'
+import Footer from "./Footer/Footer";
+import Body from "./body/Body";
+
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import About from "./Header/About.js";
+import Services from "./Header/Services.js";
+import Contact from "./Header/Contact.js";
 
 function App() {
   return (
     <div>
-      <Header />
-      <div className="container">
-        {Data.map((value, index) => {
-          return (
-            <Image
-              name={value.name}
-              rating={value.rating}
-              address={value.address}
-              img={value.img}
-            />
-          );
-        })}
-      </div>
-      <Footer />
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Body/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/service" element={<Services/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+
+        </Routes>
+        
+      </BrowserRouter>
     </div>
   );
 

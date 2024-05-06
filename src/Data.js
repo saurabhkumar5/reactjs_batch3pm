@@ -1,4 +1,4 @@
-export  let  Data = 
+ let  Data = 
   [
     {name:"burger",rating:"4.5",address:"sector16",img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/da34f1382cb97166f2bd96653bc70e1b"},
     {name:"aalu",rating:"4",address:"sector46",img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bhiqtneraycbpeqjworl"},
@@ -11,3 +11,5 @@ export  let  Data =
     {name:"daal chawal",rating:"41",address:"sector65",img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/da34f1382cb97166f2bd96653bc70e1b"},
 
    ];
+
+   export default Data;
