@@ -1,8 +1,13 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
 function Services() {
+
+  let {category} = useParams()
+ 
   return (
     <div>
+      <h1>{category}</h1>
         KEYNOTE
 In today's dynamic and competitive landscape, motivation isn't just beneficial, rather it's essential. But motivation is not just about pep talks and incentives; it's about tapping into the deeper aspirations and potential of people. And who better than Sandeep Maheshwari whose insightful sessions have transformed millions of lives across the globe. With 1200+ motivational sessions under his belt, he understands the real hurdles and pain points of his audience.
 

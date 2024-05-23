@@ -7,21 +7,27 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import About from "./Header/About.js";
 import Services from "./Header/Services.js";
 import Contact from "./Header/Contact.js";
+import Form from "./Form.js";
+import Img from './shilpa.jpeg'
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFsPoZ5DAtC-vAsNKl8Nj86WkbAH1kDiLpdY79UD-6Ww&s"/>
+      {/* <Form/> */}
+      {/* <BrowserRouter>
         <Header/>
         <Routes>
           <Route path="/" element={<Body/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/service" element={<Services/>}/>
+          <Route path="/service/:category" element={<Services/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="*" element={<h1>Error 404 page not found</h1>}/>
+
 
         </Routes>
         
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 
