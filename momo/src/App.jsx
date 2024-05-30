@@ -115,24 +115,137 @@
 
 
 
+// import React from 'react'
+// import Api from './Api'
+// import Github from './Github'
+// import Form from './Form'
+// import Map from './Map'
+
+// import ValidationForm from './ValidationForm'
+// import Nasa from './Nasa'
+
+
+// function App() {
+//   return (
+//     <div>
+//       <Api/>
+//       <Github/>
+//       <Map/>
+//       <Form/>
+//       <ValidationForm/>
+//       <Nasa/>
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// import React, { createContext } from 'react'
+// import CM from './CM'
+// import Janta from './Janta'
+// import './CM.css'
+
+// // create, provider, consumer
+//  const data = createContext();
+ 
+// function App() {
+//   let paisa = "5000"
+//   return (
+//     <div className='pm'>
+//       <h1>hello i am pm</h1>
+//       <data.Provider value={paisa}>
+//        <CM/>
+//       </data.Provider>
+     
+      
+//     </div>
+//   )
+// }
+
+// export default App;
+// export {data}
+
+
+
+
+
+// import React, { createContext } from 'react'
+// import CM from './CM'
+// import Janta from './Janta'
+// import './CM.css'
+
+// // create, provider, consumer
+//  const data = createContext();
+//  const data1 = createContext();
+ 
+// function App() {
+//   let paisa = "5000";
+//   let bonus = "10000"
+//   return (
+//     <div className='pm'>
+//       <h1>hello i am pm</h1>
+//       <data.Provider value={paisa}>
+//        <data1.Provider value={bonus}>
+//         <CM/>
+//        </data1.Provider>
+//       </data.Provider>
+     
+      
+//     </div>
+//   )
+// }
+
+// export default App;
+// export {data,data1}
+
+
+
+
+// import React, { useRef, useState } from 'react'
+// import './App.css'
+
+// function App() {
+//          const a = useRef("");
+//           const [name, setName] = useState("aman")
+
+//            function reset(){
+//                  setName("")
+//                  a.current.focus()
+//            }
+//            function change(){
+//             // setName("raman")
+
+//             a.current.value = "raman";
+//             a.current.style.color = "blue"
+//            }
+//   return (
+//     <div>
+//       <h1>hello</h1>
+//       <p>world</p>
+//       <input className='momo' ref={a} type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
+//       <button onClick={reset}>reset</button>
+//       <button onClick={change}>change</button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
 import React from 'react'
-import Api from './Api'
-import Github from './Github'
-import Form from './Form'
-import Map from './Map'
-
-import ValidationForm from './ValidationForm'
-
+import SimpleSlider from './SimpleSlider'
 
 function App() {
   return (
     <div>
-      {/* <Api/> */}
-      {/* <Github/> */}
-      {/* <Map/> */}
-      {/* <Form/> */}
-      <ValidationForm/>
-      
+      <SimpleSlider/>
     </div>
   )
 }
